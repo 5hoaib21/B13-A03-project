@@ -4,6 +4,17 @@ function validOtp(otp) {
   }
   const absoluteAlphabet = otp.startsWith("ph-");
   const lengthOfAlphabet = otp.length === 8;
+
+  //   const bothConditions = absoluteAlphabet + lengthOfAlphabet;
+  //  if (bothConditions ===m true){
+  //  return true;
+  //  }
+  //  else{
+  //      return false;
+  //  }
+  //
+  //
+
   if (absoluteAlphabet === true && lengthOfAlphabet === true) {
     return true;
   } else {
