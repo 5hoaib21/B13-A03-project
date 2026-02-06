@@ -1,0 +1,1 @@
+function newPrice(currentPrice, discount) {}
