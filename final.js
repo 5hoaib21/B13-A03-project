@@ -12,3 +12,25 @@ function newPrice(currentPrice, discount) {
   const afterDiscount = currentPrice - discountPrice;
   return afterDiscount.toFixed(3);
 }
+//
+//
+//
+//problem 02 completed
+
+//
+//
+//
+// problem 03 completed
+
+//
+//
+//
+// problem 04 completed
+//
+//
+//
+//
+//
+//
+
+// problem 05 completed
