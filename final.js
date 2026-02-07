@@ -1,4 +1,4 @@
-//problem 01 completed
+//Problem-01: New Price for Eid Sale
 function newPrice(currentPrice, discount) {
   if (typeof currentPrice !== "number" || typeof discount !== "number") {
     return "Invalid";
@@ -12,11 +12,8 @@ function newPrice(currentPrice, discount) {
   const afterDiscount = currentPrice - discountPrice;
   return afterDiscount.toFixed(3);
 }
-//
-//
-//
-//problem 02 completed
-//-------------------------------
+
+//Problem-02: OTP Validation for Zapshift
 function validOtp(otp) {
   if (typeof otp !== "string") {
     return "Invalid";
@@ -29,11 +26,8 @@ function validOtp(otp) {
     return false;
   }
 }
-//
-//
-//
-// problem 03 completed
 
+//Problem-03: BCS Final Score Calculator
 function finalScore(omr) {
   // let omr = {
   //   right: Number,
@@ -56,11 +50,7 @@ function finalScore(omr) {
   return Math.round(score);
 }
 
-//
-//
-//
-// problem 04 completed
-
+//Problem-04: Upcoming Gono Vote
 function gonoVote(array) {
   if (!Array.isArray(array)) {
     return "Invalid";
@@ -86,11 +76,29 @@ function gonoVote(array) {
   }
 }
 
-//
-//
-//
-//
-//
-//
+//Problem-05: Text Analyzer for an AI Company
+function analyzeText(str) {
+  // Your code here
+  if (typeof str !== "string" || str.trim().length === 0) {
+    return "Invalid";
+  }
 
-// problem 05 completed
+  const noSpaceWord = str.split(" ").join("");
+  const tokenCuntt = noSpaceWord.length;
+
+  const arrayWord = str.split(" ");
+  let longest = "";
+
+  for (let i = 0; i < arrayWord.length; i++) {
+    const currentWord = arrayWord[i];
+
+    if (currentWord.length > longest.length) {
+      longest = currentWord;
+    }
+  }
+
+  return {
+    longwords: longest,
+    token: tokenCuntt,
+  };
+}
