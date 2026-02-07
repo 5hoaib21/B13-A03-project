@@ -16,7 +16,19 @@ function newPrice(currentPrice, discount) {
 //
 //
 //problem 02 completed
-
+//-------------------------------
+function validOtp(otp) {
+  if (typeof otp !== "string") {
+    return "Invalid";
+  }
+  const absoluteAlphabet = otp.startsWith("ph-");
+  const lengthOfAlphabet = otp.length === 8;
+  if (absoluteAlphabet === true && lengthOfAlphabet === true) {
+    return true;
+  } else {
+    return false;
+  }
+}
 //
 //
 //
