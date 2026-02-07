@@ -1,7 +1,13 @@
-function finalScore(data) {
-  const right = data.right;
-  const wrong = data.wrong;
-  const skip = data.skip;
+function finalScore(omr) {
+  // let omr = {
+  //   right: Number,
+  //   wrong: Number,
+  //   skip: Number,
+  // };
+
+  let right = omr.right;
+  let wrong = omr.wrong;
+  let skip = omr.skip;
 
   if (right + wrong + skip !== 100) {
     return "Invalid";
