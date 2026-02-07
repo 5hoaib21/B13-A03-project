@@ -1,16 +1,15 @@
-function finalScore(omr) {
-  let omrSheet = {
-    right: 100,
-    wrong: 100,
-    skip: 100,
-  };
+function finalScore(data) {
+  const right = data.right;
+  const wrong = data.wrong;
+  const skip = data.skip;
 
-  let right = omrSheet.right;
-  let wrong = omrSheet.wrong;
-  let skip = omrSheet.skip;
   if (right + wrong + skip !== 100) {
     return "Invalid";
   }
-  //number '+'/'-' korte partechi na ;
+
+  let rightAns = right * 1;
+  let wrongAns = wrong * 0.5;
+  let score = rightAns - wrongAns;
+
+  return Math.round(score);
 }
-console.log(finalScore({ right: 50, wrong: 30, skip: 20 }));
